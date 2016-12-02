@@ -1,0 +1,47 @@
+$accordian:       #54565A;
+$accordian-hover: #8EAE49;
+$lists:           lightgray;
+$background:      lightblue;
+
+
+* {margin: 0; padding: 0;}
+
+li {list-style-type: none;}
+
+body {
+	background:  $background;
+	font-family: 'Roboto', sans-serif;
+}
+
+#accordian {
+	background: $lists;
+	color:      $lists;
+	width:      200px;
+	margin:     80px auto 0 auto;
+}
+
+#accordian h3 {
+	font-size:    16px;
+	line-height:  42px;
+   padding-left: 20px;
+	padding:      0 10px;
+	cursor:       pointer;
+	background-color: $accordian;
+
+   &:hover {
+     background-color: $accordian-hover;
+   }
+}
+
+a {
+	display: block;
+   color:   $accordian;
+	font-size:    14px;
+	line-height:  33px;
+	padding-left: 20px;
+	text-decoration: none;
+}
+
+#accordian ul ul {display: none;}
+
+#accordian li.active ul {display: block;}
