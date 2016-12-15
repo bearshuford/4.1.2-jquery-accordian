@@ -45,4 +45,7 @@ a {
 #accordian li.active ul {
   display: block; }
 
+#accordian li.active h3 {
+  display: block; }
+
 /*# sourceMappingURL=main.css.map */
